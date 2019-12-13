@@ -1,0 +1,95 @@
+* { box-sizing: border-box; }
+
+/* Estilos generales */
+
+body {
+    color:#333;
+    background-color: #7c90db;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+a,
+a:hover,
+a:visited {
+    text-decoration: none;
+    color:#333;
+}
+
+header,
+footer {
+    padding: 1rem; 
+    background-color: #342a21;
+    color: #ddd
+}
+
+header a,
+footer a {
+    display: inline-block;
+    padding: .5rem;
+    color: #ccc;
+}
+
+header a:hover,
+footer a:hover {
+    color: #fff;
+}
+
+header .logo {
+    color: #7d5c65;
+    font-weight: bold;
+}
+footer .copyright {
+    margin-top: 2rem;
+    color: #666;
+}
+
+main {
+    margin: 3rem 0;
+}
+
+/* Links activos del menu según la página */
+
+.page-about nav .about,
+.page-contact nav .contact,
+.page-home nav .home,
+.page-products nav .products {
+    background-color: #71816d;
+    border-radius: 6px;
+}
+
+/* Productos */
+
+.product-list {
+    padding: 2rem 1rem;
+    background-color: #9593d9;
+}
+
+.product-list .product img {
+    width: 100%;
+}
+
+.product {
+    background-color: white;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.product .product-image {
+    position: relative;
+}
+
+.product .product-image h4 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    padding: .5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.product .product-desc {
+    padding: .5rem;
+}

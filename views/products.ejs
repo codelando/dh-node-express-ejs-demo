@@ -1,0 +1,26 @@
+<%- include('partials/head') %>
+    <%- include('partials/header') %>
+    <div class="container">
+        <main>
+            <h1>Ésta es nuestra página de productos</h1>
+            <div class="container">
+                <div class="row product-list">
+                    <% products.forEach(product => { %>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <article class="product">
+                                <div class="product-image">
+                                    <img src="/img/products/<%= product.image %>" alt="<%= product.name %>">
+                                    <h4><%= product.name %></h4>
+                                </div>
+                                <div class="product-desc">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    <p><%= product.price %></p>
+                                </div>
+                            </article>
+                        </div>
+                    <% }) %>
+                </div>
+            </div>
+        </main>
+    </div>
+    <%- include('partials/footer') %>
